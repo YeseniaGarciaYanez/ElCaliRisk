@@ -1,0 +1,140 @@
+/* Importar la fuente antes de usarla */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap');
+
+/* Centrar todo el contenido */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #003785; /* Fondo azul */
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Asegurarse de especificar la fuente correctamente */
+}
+
+/* Estilo para la imagen */
+img {
+  width: 180px; /* Tamaño pequeño */
+  height: auto; /* Mantiene proporciones */
+  margin-bottom: 2em; /* Superposición sobre el formulario */
+  border-radius: 50%; /* Hazla circular si lo deseas */
+  box-shadow: none; /* Sin sombra */
+}
+
+/* Estilo del formulario */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2em;
+  background: rgba(0, 56, 133, 0.3); /* Fondo degradado casi transparente */
+  border-radius: 25px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  align-items: center; /* Centra el contenido */
+  width: 300px; /* Ajusta el ancho del cuadro */
+}
+
+.form:hover {
+  transform: scale(1.05);
+  border: 2px solid rgb(32, 130, 243);
+}
+
+#heading {
+  text-align: center;
+  margin: 1em 0;
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; /* Sin negritas */
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; /* Sin negritas */
+}
+
+.field:focus-within {
+  box-shadow: none; /* Sin sombra al enfocar */
+}
+
+/* Específico para evitar fondo en los campos de usuario y contraseña */
+input[type="text"], 
+input[type="password"] {
+  background-color: transparent; /* Fondo transparente */
+  outline: none; /* Sin contorno */
+  border: none; /* Sin bordes */
+  box-shadow: none; /* Sin sombra */
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+  background-color: transparent; /* Sin cambio de fondo al enfocar */
+  outline: none;
+  box-shadow: none; /* Asegura que no haya sombras */
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: black;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal; /* Sin negritas */
+}
+
+
+.btn {
+  display: flex;
+  justify-content: space-between; /* Alinea ambos botones horizontalmente */
+  gap: 1em; /* Espacio entre botones */
+  width: 100%; /* Asegura que ocupen el mismo ancho */
+  margin-top: 1em; /* Espaciado superior */
+}
+
+.button1 {
+  width: 80px; /* Ancho fijo */
+  height: 30px; /* Altura fija */
+  padding: 0.5em 1em; /* Espaciado interno */
+  font-size: 1 em; /* Tamaño del texto */
+  font-weight: bold; /* Resalta el texto */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.button1:hover {
+  background-color: rgb(32, 130, 243); /* Cambio de color al pasar el ratón */
+  color: white;
+  transform: scale(1.05); /* Ligero aumento al pasar el ratón */
+}
+
+
+.button1:hover {
+  background-color: rgb(32, 130, 243);
+  color: black;
+}
+
+
+

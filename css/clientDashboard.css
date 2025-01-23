@@ -1,0 +1,324 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+header {
+    background: #3D56DB;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.header-logo {
+    height: 60px; /* Tamaño del logo */
+    width: auto; /* Mantiene las proporciones */
+    margin-right: 15px; /* Espacio entre el logo y el contenido del header */
+}
+
+header h1 {
+    margin: 0 auto; /* Centra el texto horizontalmente dentro del header */
+    font-size: 25px; /* Ajusta el tamaño del texto */
+    text-align: center;
+}
+
+#clientDashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+/* Encabezado */
+.header {
+    background-color: #3D56DB;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #3D56DB; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px; 
+    height: 120%;
+    padding-top: 100px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #2EBCEE; 
+    color: #FFFFFF; 
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #2EBCEE; 
+    color: #FFFFFF; 
+}
+
+
+/* Contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    padding-top: 6rem;
+}
+
+/* Tarjetas de información */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h3 {
+    color: #3D56DB;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.button {
+    background-color: #3D56DB;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #2EBCEE;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3D56DB;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Resaltar filas */
+tr:nth-child(even) {
+    background-color: #F4F6F9;
+}
+
+tr:hover {
+    background-color: #EFEFEF;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    z-index: 100;
+}
+
+/* Contenedor de la sección de Solicitar Servicio */
+.solicitar-servicio-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Añadido margen superior para separar de la parte superior */
+}
+
+.solicitar-servicio-container h3 {
+    font-size: 1.8em;
+    color: #3D56DB;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #547A80;
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+#descripcion {
+    width: 100%;
+    height: 100px; /* Altura fija */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: none; /* Evita que el usuario redimensione el campo */
+    box-sizing: border-box; /* Para que el padding no afecte al tamaño total */
+    margin-bottom: 15px; /* Añadido margen inferior */
+}
+
+.button {
+    background-color: #3D56DB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón ocupe el 100% del ancho */
+}
+
+.button:hover {
+    background-color: #2EBCEE;
+}
+
+.mensaje-exito {
+    color: #2EBCEE;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center; /* Centra el mensaje de éxito */
+}
+
+/* Contenedor de la sección Mis Servicios */
+#misServicios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#misServicios h3 {
+    font-size: 1.8em;
+    color: #3D56DB;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margheader {
+        background: #3358ff;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;          
+        width: 100%;      
+        height: 50px;
+        z-index: 1000;    
+    }in-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3D56DB;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón de Ver PDF */
+.button {
+    background-color: #3D56DB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #2EBCEE;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
